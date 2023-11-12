@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/sobre.css">
+    <link rel="icon" href="assets/media/7048695-PhotoRoom.ico" type="image/png">
+</head>
+<body class="text-light">
+    <header>
+        <div class="container">
+           <div class="row">
+              <div class="col-xl-6 col-12">
+                 <div class="logo">
+                    <img src="assets/media/7048695-PhotoRoom.png" alt="">
+                 </div>
+              </div>
+              <div class="nav-mobile col-xl-6 col-12 d-flex justify-content-end">
+                 <nav class="d-flex flex-direction-row align-items-center">
+                    <ul class="nav">
+                       <li class="nav-item">
+                         <a class="nav-link text-light" href="index.html">Inicio</a>
+                       </li>
+                       <ul class="navbar-nav">
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Disciplinas
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                              <li><a class="dropdown-item" href="front.html">Front-end</a></li>
+                              <li><a class="dropdown-item" href="php.html">Php</a></li>
+                              <li><a class="dropdown-item" href="banco de dados.html">Banco de dados</a></li>
+                              <li><a class="dropdown-item" href="java.html">Java</a></li>
+                              <li><a class="dropdown-item" href="desenvolvimento.html">Desenvolvimento de Jogos</a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                       <li class="nav-item">
+                         <a class="nav-link text-light" href="contato.html">Contato</a>
+                       </li>
+                     </ul>
+                 </nav>
+              </div>
+           </div>
+        </div>
+     </header>
+   <main>
+    <div class="row py-4">
+        <div id="img-disciplinas1" class="left-side col-xl-6 col-12 d-flex align-items-center justify-content-center">
+            <img class="w-75 " src="assets/media/java01.jpg" alt="">
+        </div>
+        <div class="right-side col-xl-6 col-12 px-4 d-flex align-items-center justify-content-center px-5">
+            <p>
+              Utilização da orientação a objetos em JAVA em um programa de zoológico com o intuito de utilizar todo o conhecimento estudando durante as aulas.
+              <br><br>Feito por <bold>Patrick Pierre</bold>
+            </p>
+        </div>
+    </div>
+
+    <div class="row py-4">
+      <div class="left-side col-xl-6 col-12 d-flex align-items-center justify-content-center">
+          <p>
+            Projeto feito em Java na matéria de POO usando herança para cadastro de novos funcionários de uma empresa.
+            <br><br>Feito por <bold>Arthur Tomba</bold>
+          </p>
+      </div>
+      <div id="img-disciplinas2" class="right-side col-xl-6 col-12 px-4 d-flex align-items-center justify-content-center px-5">
+        <img class="w-75" src="assets/media/java02.png" alt="">
+      </div>
+  </div>
+   </main>
+   
+   <aside>
+      <a target="_blank" href="https://api.whatsapp.com/send?phone=55999999999" style="text-decoration: none;">
+          <div class="ballon">
+              <div class="ballon-icon">
+                  <img src="assets/media/wppicon.png" alt="wpp-logo">
+              </div>
+              <div class="ballon-text">
+                  <span>Faça seu pedido!</span>
+              </div>
+          </div>
+      </a>
+  </aside>
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script>
+      
+      $(document).ready(function() {
+          const imagemContainer = $("#img-disciplinas1");
+          imagemContainer.addClass("mostrar");
+      });
+
+      $(document).ready(function() {
+          const imagemContainer = $("#img-disciplinas2");
+          imagemContainer.addClass("mostrar");
+      });
+
+    </script>
+</body>
+</html>

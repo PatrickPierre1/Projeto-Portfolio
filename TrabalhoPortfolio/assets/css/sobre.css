@@ -1,0 +1,141 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', sans-serif;
+}
+:root {
+    --azulclaro: #00adb5;
+    --azulescuro: #222831;
+    --cinzaescuro: #393e46;
+    --cinzaclaro: #eeeeee;
+}
+body{
+    max-width: 100vw;
+    background-color: var(--azulescuro);
+}
+.nav-item a:hover {
+    color: var(--azulclaro)!important;
+}
+.logo img {
+    width: 55px;
+    height: 60px;
+    margin: 10px;
+}
+.about p {
+    text-align: center;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+aside {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    text-decoration: none;
+}
+.ballon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 190px;
+    height: 42px;
+    margin: 30px;
+    border-radius: 30px;
+    background-color: #22c15e;
+    border-radius: 40px;
+}
+.ballon:hover {
+    background-color: #22a15e;
+    transition: all ease 0.3s;
+}
+.ballon-icon img {
+    width: 40px;
+}
+.ballon-text {
+    padding-left: 5px;
+}
+.ballon-text span {
+    color: white;
+}
+
+/* styles.css */
+#img-disciplinas1,
+#img-disciplinas2,
+#img-disciplinas3,
+#img-disciplinas4{
+    opacity: 0;
+    transition: opacity 1s; /* Adicione uma transição de 1 segundo para a propriedade "opacity" */
+}
+
+#img-disciplinas1 img,
+#img-disciplinas2 img,
+#img-disciplinas3 img,
+#img-disciplinas4 img{
+    max-width: 100%;
+}
+
+#img-disciplinas1.mostrar,
+#img-disciplinas2.mostrar,
+#img-disciplinas3.mostrar,
+#img-disciplinas4.mostrar{
+    opacity: 1;
+}
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.right-side, .left-side{
+    text-align: center;
+}
+.right-side p, .left-side p{
+    font-size: 0.8rem;
+}
+
+@media (max-width: 576px) {
+    .about p {
+        font-size: 0.7rem!important;
+    }
+    .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .nav-mobile {
+        justify-content: center!important;
+    }
+    .right-side {
+        padding-top: 5vh;
+    }
+    aside .ballon{
+        width: 60px;
+    }
+    .ballon-text{
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    .about p {
+        font-size: 0.7rem!important;
+    }
+    .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .nav-mobile {
+        justify-content: center!important;
+    }
+    .right-side {
+        padding-top: 5vh;
+    }
+    aside .ballon{
+        width: 60px;
+    }
+    .ballon-text{
+        display: none;
+    }
+}
